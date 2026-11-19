@@ -1,0 +1,1499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#126B3A" />
+
+<!-- ==================== SEO ==================== -->
+<title>MinaHerb – Premium Herbal &amp; Natural Products Online | COD Available</title>
+<meta name="description" content="Shop 100% natural herbal products at MinaHerb – aloe vera gel, herbal soaps, hair oils, face packs & more. Cash on Delivery available. Fast delivery across India." />
+<link rel="canonical" href="https://minaherb.com/" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="MinaHerb – Premium Herbal Products Online" />
+<meta property="og:description" content="Discover trusted herbal skincare and wellness products. COD available. Delivered across India." />
+<meta property="og:url" content="https://minaherb.com/" />
+<meta property="og:image" content="https://minaherb.com/og-image.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<!-- Structured data – Organization + Website -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "MinaHerb",
+  "url": "https://minaherb.com",
+  "logo": "https://minaherb.com/logo.png",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+91-XXXXXXXXXX",
+    "contactType": "customer support",
+    "areaServed": "IN",
+    "availableLanguage": ["English", "Hindi"]
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "MinaHerb",
+  "url": "https://minaherb.com"
+}
+</script>
+
+<!-- ==================== FONTS ==================== -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+<style>
+/* =========================================================
+   DESIGN TOKENS
+   ========================================================= */
+:root{
+  --green:        #126B3A;
+  --green-dark:   #0d4f2a;
+  --green-light:  #e6f2ea;
+  --cream:        #F7F8EF;
+  --gold:         #D6B45A;
+  --gold-dark:    #b8963f;
+  --white:        #FFFFFF;
+  --text:         #1F2A24;
+  --text-soft:    #4A5A51;
+  --border:       #e6e8dd;
+  --danger:       #b23b3b;
+  --radius:       14px;
+  --radius-sm:    8px;
+  --shadow-sm:    0 1px 3px rgba(18,107,58,.06);
+  --shadow:       0 4px 20px rgba(18,107,58,.08);
+  --shadow-lg:    0 12px 40px rgba(18,107,58,.14);
+  --font-serif:   'Fraunces', Georgia, serif;
+  --font-sans:    'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --container:    1200px;
+  --transition:   all .25s ease;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  font-family:var(--font-sans);
+  color:var(--text);
+  background:var(--white);
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+img,svg{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none}
+ul{list-style:none}
+h1,h2,h3,h4{font-family:var(--font-serif);font-weight:600;line-height:1.2;color:var(--text)}
+.container{max-width:var(--container);margin:0 auto;padding:0 20px}
+.section{padding:72px 0}
+.section--cream{background:var(--cream)}
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  padding:12px 24px;border-radius:999px;font-weight:600;font-size:15px;
+  transition:var(--transition);white-space:nowrap;border:2px solid transparent;
+}
+.btn--primary{background:var(--green);color:var(--white)}
+.btn--primary:hover{background:var(--green-dark);transform:translateY(-1px);box-shadow:var(--shadow)}
+.btn--gold{background:var(--gold);color:var(--text)}
+.btn--gold:hover{background:var(--gold-dark);color:var(--white);transform:translateY(-1px)}
+.btn--outline{background:transparent;color:var(--green);border-color:var(--green)}
+.btn--outline:hover{background:var(--green);color:var(--white)}
+.btn--ghost{background:transparent;color:var(--text);border-color:var(--border)}
+.btn--ghost:hover{border-color:var(--green);color:var(--green)}
+.btn--sm{padding:9px 18px;font-size:14px}
+.btn--full{width:100%}
+
+/* =========================================================
+   ANNOUNCEMENT BAR
+   ========================================================= */
+.announce{
+  background:linear-gradient(90deg,var(--green-dark),var(--green));
+  color:var(--cream);font-size:13px;font-weight:500;
+  text-align:center;padding:10px 20px;letter-spacing:.02em;
+}
+.announce strong{color:var(--gold)}
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+.header{
+  position:sticky;top:0;z-index:900;background:var(--white);
+  border-bottom:1px solid var(--border);transition:var(--transition);
+}
+.header.scrolled{box-shadow:var(--shadow-sm)}
+.header__inner{
+  display:flex;align-items:center;gap:24px;
+  height:72px;max-width:var(--container);margin:0 auto;padding:0 20px;
+}
+.logo{display:flex;align-items:center;gap:10px;font-family:var(--font-serif);font-size:24px;font-weight:700;color:var(--green)}
+.logo svg{width:32px;height:32px}
+
+.nav{display:flex;gap:28px;align-items:center}
+.nav a{font-size:15px;font-weight:500;color:var(--text);transition:var(--transition);position:relative}
+.nav a:hover{color:var(--green)}
+.nav a::after{content:'';position:absolute;left:0;bottom:-4px;width:0;height:2px;background:var(--green);transition:width .25s}
+.nav a:hover::after{width:100%}
+
+.header__actions{display:flex;align-items:center;gap:6px;margin-left:auto}
+.icon-btn{
+  width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+  transition:var(--transition);position:relative;color:var(--text);
+}
+.icon-btn:hover{background:var(--cream);color:var(--green)}
+.icon-btn svg{width:20px;height:20px}
+.cart-badge{
+  position:absolute;top:4px;right:4px;background:var(--gold);color:var(--text);
+  font-size:11px;font-weight:700;min-width:18px;height:18px;border-radius:9px;
+  display:flex;align-items:center;justify-content:center;padding:0 4px;
+}
+.menu-toggle{display:none}
+
+/* =========================================================
+   MOBILE MENU
+   ========================================================= */
+.mobile-nav{
+  position:fixed;top:0;left:0;width:280px;height:100vh;background:var(--white);
+  z-index:1000;transform:translateX(-100%);transition:transform .3s ease;
+  padding:24px;overflow-y:auto;
+}
+.mobile-nav.open{transform:translateX(0)}
+.mobile-nav__head{display:flex;justify-content:space-between;align-items:center;margin-bottom:24px}
+.mobile-nav a{display:block;padding:14px 0;border-bottom:1px solid var(--border);font-weight:500}
+.overlay{position:fixed;inset:0;background:rgba(0,0,0,.4);z-index:999;opacity:0;pointer-events:none;transition:opacity .3s}
+.overlay.open{opacity:1;pointer-events:auto}
+
+/* =========================================================
+   HERO
+   ========================================================= */
+.hero{
+  background:linear-gradient(135deg,var(--cream) 0%,#eef4e8 100%);
+  position:relative;overflow:hidden;
+}
+.hero__inner{
+  max-width:var(--container);margin:0 auto;padding:80px 20px;
+  display:grid;grid-template-columns:1.1fr 1fr;gap:60px;align-items:center;
+}
+.hero__eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  background:var(--white);color:var(--green);padding:8px 16px;border-radius:999px;
+  font-size:13px;font-weight:600;letter-spacing:.03em;text-transform:uppercase;
+  box-shadow:var(--shadow-sm);margin-bottom:20px;
+}
+.hero h1{font-size:clamp(32px,4.5vw,56px);margin-bottom:20px;color:var(--green-dark)}
+.hero h1 em{color:var(--gold);font-style:italic}
+.hero p{font-size:17px;color:var(--text-soft);margin-bottom:32px;max-width:480px}
+.hero__cta{display:flex;gap:14px;flex-wrap:wrap}
+.hero__visual{
+  aspect-ratio:1;background:radial-gradient(circle at 50% 50%,#dff0e2,#c8e2ce);
+  border-radius:50%;position:relative;max-width:440px;margin:0 auto;
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:inset 0 0 0 12px rgba(255,255,255,.5);
+}
+.hero__visual svg{width:55%;height:55%;color:var(--green);opacity:.85}
+.hero__badge{
+  position:absolute;bottom:20px;right:-10px;background:var(--white);
+  padding:14px 20px;border-radius:var(--radius);box-shadow:var(--shadow-lg);
+  display:flex;align-items:center;gap:12px;font-size:13px;font-weight:600;
+}
+.hero__badge-icon{width:40px;height:40px;background:var(--green-light);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--green);flex-shrink:0}
+
+/* =========================================================
+   TRUST STRIP
+   ========================================================= */
+.trust-strip{
+  background:var(--green);color:var(--cream);
+  display:grid;grid-template-columns:repeat(4,1fr);
+  max-width:var(--container);margin:-40px auto 0;position:relative;
+  border-radius:var(--radius);padding:24px;gap:20px;
+  box-shadow:var(--shadow-lg);z-index:5;
+}
+.trust-item{display:flex;align-items:center;gap:12px;font-size:14px;font-weight:500}
+.trust-item svg{width:28px;height:28px;color:var(--gold);flex-shrink:0}
+
+/* =========================================================
+   SECTION HEADERS
+   ========================================================= */
+.section-head{text-align:center;margin-bottom:48px}
+.section-head__eyebrow{
+  color:var(--gold);font-size:13px;font-weight:700;
+  letter-spacing:.12em;text-transform:uppercase;margin-bottom:10px;display:block;
+}
+.section-head h2{font-size:clamp(26px,3vw,38px);color:var(--green-dark);margin-bottom:12px}
+.section-head p{color:var(--text-soft);max-width:600px;margin:0 auto}
+
+/* =========================================================
+   CATEGORIES
+   ========================================================= */
+.categories-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:16px}
+.cat-card{
+  background:var(--white);border:1px solid var(--border);border-radius:var(--radius);
+  padding:24px 16px;text-align:center;transition:var(--transition);
+}
+.cat-card:hover{border-color:var(--green);transform:translateY(-3px);box-shadow:var(--shadow)}
+.cat-card__icon{
+  width:64px;height:64px;background:var(--green-light);border-radius:50%;
+  display:flex;align-items:center;justify-content:center;margin:0 auto 12px;color:var(--green);
+}
+.cat-card__icon svg{width:30px;height:30px}
+.cat-card h3{font-size:14px;font-family:var(--font-sans);font-weight:600;margin-bottom:2px;color:var(--text)}
+.cat-card span{font-size:12px;color:var(--text-soft)}
+
+/* =========================================================
+   PRODUCT GRID
+   ========================================================= */
+.products-grid{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));
+  gap:24px;
+}
+.product-card{
+  background:var(--white);border:1px solid var(--border);border-radius:var(--radius);
+  overflow:hidden;transition:var(--transition);display:flex;flex-direction:column;
+  position:relative;
+}
+.product-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);border-color:transparent}
+.product-card__media{
+  position:relative;aspect-ratio:1;overflow:hidden;
+  display:flex;align-items:center;justify-content:center;
+}
+.product-card__media svg{width:50%;height:50%;color:var(--green);opacity:.7;transition:transform .4s}
+.product-card:hover .product-card__media svg{transform:scale(1.08)}
+.badge{
+  position:absolute;top:12px;left:12px;background:var(--green);color:var(--white);
+  font-size:11px;font-weight:700;padding:4px 10px;border-radius:999px;letter-spacing:.03em;
+}
+.badge--discount{background:var(--danger)}
+.badge--gold{background:var(--gold);color:var(--text)}
+.wishlist-btn{
+  position:absolute;top:10px;right:10px;width:34px;height:34px;background:var(--white);
+  border-radius:50%;display:flex;align-items:center;justify-content:center;
+  box-shadow:var(--shadow-sm);transition:var(--transition);color:var(--text-soft);
+}
+.wishlist-btn:hover{color:var(--danger);transform:scale(1.1)}
+.wishlist-btn.active{color:var(--danger)}
+.wishlist-btn svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:2}
+.wishlist-btn.active svg{fill:currentColor}
+.product-card__body{padding:16px;display:flex;flex-direction:column;gap:6px;flex-grow:1}
+.product-card__name{font-family:var(--font-sans);font-size:15px;font-weight:600;color:var(--text);line-height:1.35}
+.product-card__desc{font-size:13px;color:var(--text-soft);line-height:1.4;flex-grow:1}
+.product-card__price-row{display:flex;align-items:baseline;gap:8px;margin-top:4px}
+.price{font-size:18px;font-weight:700;color:var(--green)}
+.price-orig{font-size:13px;color:var(--text-soft);text-decoration:line-through}
+.stock{font-size:12px;color:var(--green);font-weight:500;display:flex;align-items:center;gap:5px}
+.stock::before{content:'';width:6px;height:6px;background:var(--green);border-radius:50%}
+.product-card__actions{display:flex;gap:8px;margin-top:10px}
+.product-card__actions .btn{flex:1;padding:10px 12px;font-size:13px}
+
+/* =========================================================
+   OFFER BANNER
+   ========================================================= */
+.offer-banner{
+  background:linear-gradient(135deg,var(--green),var(--green-dark));
+  color:var(--white);border-radius:var(--radius);padding:48px;
+  display:grid;grid-template-columns:2fr 1fr;gap:32px;align-items:center;
+  position:relative;overflow:hidden;
+}
+.offer-banner::before{
+  content:'';position:absolute;top:-80px;right:-80px;width:280px;height:280px;
+  background:rgba(214,180,90,.15);border-radius:50%;
+}
+.offer-banner h2{color:var(--white);font-size:32px;margin-bottom:12px}
+.offer-banner h2 em{color:var(--gold);font-style:italic}
+.offer-banner p{color:rgba(255,255,255,.85);margin-bottom:24px;max-width:500px}
+
+/* =========================================================
+   WHY CHOOSE
+   ========================================================= */
+.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.why-card{text-align:center;padding:32px 20px;background:var(--white);border-radius:var(--radius);border:1px solid var(--border)}
+.why-card__icon{
+  width:64px;height:64px;background:var(--cream);border-radius:50%;
+  display:flex;align-items:center;justify-content:center;margin:0 auto 16px;color:var(--green);
+}
+.why-card__icon svg{width:28px;height:28px}
+.why-card h3{font-size:17px;font-family:var(--font-sans);font-weight:600;margin-bottom:8px}
+.why-card p{font-size:14px;color:var(--text-soft)}
+
+/* =========================================================
+   TESTIMONIALS
+   ========================================================= */
+.testimonials-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.testimonial{
+  background:var(--white);border:1px solid var(--border);border-radius:var(--radius);
+  padding:28px;
+}
+.testimonial__stars{color:var(--gold);font-size:14px;letter-spacing:2px;margin-bottom:12px}
+.testimonial__text{font-size:15px;color:var(--text-soft);line-height:1.65;margin-bottom:20px;font-style:italic}
+.testimonial__author{display:flex;align-items:center;gap:12px}
+.testimonial__avatar{
+  width:42px;height:42px;border-radius:50%;background:var(--green-light);color:var(--green);
+  display:flex;align-items:center;justify-content:center;font-weight:700;font-size:16px;
+}
+.testimonial__name{font-weight:600;font-size:14px}
+.testimonial__role{font-size:12px;color:var(--text-soft)}
+
+/* =========================================================
+   BRAND STORY
+   ========================================================= */
+.brand-story{display:grid;grid-template-columns:1fr 1.2fr;gap:60px;align-items:center}
+.brand-story__visual{
+  aspect-ratio:1;border-radius:var(--radius);background:linear-gradient(135deg,var(--cream),#dceadb);
+  display:flex;align-items:center;justify-content:center;
+}
+.brand-story__visual svg{width:60%;height:60%;color:var(--green);opacity:.7}
+.brand-story h2{color:var(--green-dark);margin-bottom:16px}
+.brand-story p{color:var(--text-soft);margin-bottom:14px;line-height:1.7}
+.brand-story__stats{display:flex;gap:40px;margin-top:32px}
+.stat__num{font-size:32px;font-weight:700;color:var(--green);font-family:var(--font-serif)}
+.stat__label{font-size:13px;color:var(--text-soft)}
+
+/* =========================================================
+   FAQ
+   ========================================================= */
+.faq-list{max-width:800px;margin:0 auto}
+.faq-item{
+  background:var(--white);border:1px solid var(--border);border-radius:var(--radius);
+  margin-bottom:12px;overflow:hidden;transition:var(--transition);
+}
+.faq-item[open]{border-color:var(--green);box-shadow:var(--shadow-sm)}
+.faq-item summary{
+  padding:20px 24px;cursor:pointer;font-weight:600;font-size:15px;
+  display:flex;justify-content:space-between;align-items:center;list-style:none;
+}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary::after{content:'+';font-size:22px;color:var(--green);transition:transform .2s}
+.faq-item[open] summary::after{content:'−'}
+.faq-item p{padding:0 24px 20px;color:var(--text-soft);font-size:14px;line-height:1.7}
+
+/* =========================================================
+   NEWSLETTER
+   ========================================================= */
+.newsletter{
+  background:var(--green);color:var(--cream);border-radius:var(--radius);
+  padding:56px 40px;text-align:center;position:relative;overflow:hidden;
+}
+.newsletter h2{color:var(--white);margin-bottom:10px;font-size:32px}
+.newsletter p{color:rgba(255,255,255,.85);max-width:500px;margin:0 auto 28px}
+.newsletter__form{display:flex;gap:10px;max-width:440px;margin:0 auto}
+.newsletter__form input{
+  flex:1;padding:14px 20px;border-radius:999px;border:none;
+  font-family:inherit;font-size:15px;outline:none;
+}
+.newsletter__form button{padding:14px 28px;white-space:nowrap}
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+.footer{background:var(--cream);padding:56px 0 24px;margin-top:72px;border-top:1px solid var(--border)}
+.footer__grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;margin-bottom:40px}
+.footer h4{font-size:15px;font-family:var(--font-sans);font-weight:700;margin-bottom:16px;color:var(--green-dark);text-transform:uppercase;letter-spacing:.05em}
+.footer ul li{margin-bottom:10px}
+.footer a{font-size:14px;color:var(--text-soft);transition:var(--transition)}
+.footer a:hover{color:var(--green)}
+.footer__brand p{font-size:14px;color:var(--text-soft);margin:12px 0 20px;max-width:320px;line-height:1.65}
+.footer__contact{font-size:13px;color:var(--text-soft);line-height:1.9}
+.footer__bottom{
+  border-top:1px solid var(--border);padding-top:24px;display:flex;
+  justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;
+  font-size:13px;color:var(--text-soft);
+}
+
+/* =========================================================
+   CART DRAWER
+   ========================================================= */
+.cart-drawer{
+  position:fixed;top:0;right:0;width:420px;max-width:100vw;height:100vh;
+  background:var(--white);z-index:1100;transform:translateX(100%);
+  transition:transform .3s ease;display:flex;flex-direction:column;
+  box-shadow:-4px 0 24px rgba(0,0,0,.1);
+}
+.cart-drawer.open{transform:translateX(0)}
+.cart-drawer__head{
+  display:flex;justify-content:space-between;align-items:center;
+  padding:20px 24px;border-bottom:1px solid var(--border);
+}
+.cart-drawer__head h3{font-size:19px;font-family:var(--font-sans);font-weight:600}
+.cart-drawer__body{flex:1;overflow-y:auto;padding:16px 24px}
+.cart-drawer__foot{padding:20px 24px;border-top:1px solid var(--border);background:var(--cream)}
+.empty-cart{text-align:center;padding:60px 20px;color:var(--text-soft)}
+.empty-cart svg{width:64px;height:64px;margin:0 auto 16px;color:var(--border)}
+.cart-item{display:flex;gap:12px;padding:14px 0;border-bottom:1px solid var(--border)}
+.cart-item:last-child{border-bottom:none}
+.cart-item__img{
+  width:64px;height:64px;border-radius:var(--radius-sm);background:var(--cream);
+  display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--green);
+}
+.cart-item__img svg{width:28px;height:28px}
+.cart-item__info{flex:1;min-width:0}
+.cart-item__name{font-size:14px;font-weight:600;margin-bottom:2px}
+.cart-item__price{font-size:14px;color:var(--green);font-weight:600;margin-bottom:6px}
+.qty-controls{display:flex;align-items:center;gap:8px}
+.qty-btn{
+  width:26px;height:26px;border:1px solid var(--border);border-radius:6px;
+  display:flex;align-items:center;justify-content:center;font-weight:600;font-size:14px;
+  transition:var(--transition);color:var(--text);
+}
+.qty-btn:hover{background:var(--green);color:var(--white);border-color:var(--green)}
+.qty-value{font-weight:600;font-size:14px;min-width:20px;text-align:center}
+.remove-btn{color:var(--text-soft);font-size:12px;margin-left:auto;transition:var(--transition);text-decoration:underline}
+.remove-btn:hover{color:var(--danger)}
+.coupon-row{display:flex;gap:8px;margin-bottom:16px}
+.coupon-row input{
+  flex:1;padding:10px 14px;border:1px solid var(--border);border-radius:var(--radius-sm);
+  font-family:inherit;font-size:13px;outline:none;
+}
+.coupon-row input:focus{border-color:var(--green)}
+.summary-row{display:flex;justify-content:space-between;font-size:14px;margin-bottom:8px;color:var(--text-soft)}
+.summary-row--total{font-size:17px;font-weight:700;color:var(--text);margin-top:12px;padding-top:12px;border-top:1px solid var(--border)}
+.summary-row--discount{color:var(--danger)}
+
+/* =========================================================
+   TOAST
+   ========================================================= */
+.toast{
+  position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(120%);
+  background:var(--green-dark);color:var(--white);padding:14px 24px;border-radius:999px;
+  font-size:14px;font-weight:500;box-shadow:var(--shadow-lg);z-index:2000;
+  transition:transform .35s cubic-bezier(.34,1.56,.64,1);max-width:90vw;text-align:center;
+}
+.toast.show{transform:translateX(-50%) translateY(0)}
+
+/* =========================================================
+   WHATSAPP FLOAT
+   ========================================================= */
+.wa-float{
+  position:fixed;right:20px;bottom:20px;width:58px;height:58px;border-radius:50%;
+  background:#25D366;display:flex;align-items:center;justify-content:center;
+  box-shadow:0 4px 14px rgba(0,0,0,.28);z-index:800;transition:transform .2s;
+}
+.wa-float:hover{transform:scale(1.08)}
+.wa-float svg{width:32px;height:32px;color:var(--white)}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+@media (max-width:1024px){
+  .nav{display:none}
+  .menu-toggle{display:flex}
+  .hero__inner{grid-template-columns:1fr;padding:48px 20px;gap:40px}
+  .hero__visual{max-width:340px;order:-1}
+  .trust-strip{grid-template-columns:repeat(2,1fr);margin:-30px 16px 0;padding:20px}
+  .categories-grid{grid-template-columns:repeat(3,1fr)}
+  .why-grid{grid-template-columns:repeat(2,1fr)}
+  .testimonials-grid{grid-template-columns:1fr}
+  .brand-story{grid-template-columns:1fr;gap:32px}
+  .offer-banner{grid-template-columns:1fr;padding:32px}
+  .footer__grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:640px){
+  .section{padding:48px 0}
+  .header__inner{height:64px;gap:12px;padding:0 16px}
+  .logo{font-size:20px}
+  .logo svg{width:26px;height:26px}
+  .icon-btn{width:40px;height:40px}
+  .trust-strip{grid-template-columns:1fr;gap:14px}
+  .categories-grid{grid-template-columns:repeat(2,1fr)}
+  .products-grid{grid-template-columns:repeat(2,1fr);gap:14px}
+  .product-card__body{padding:12px}
+  .product-card__name{font-size:14px}
+  .product-card__desc{font-size:12px;display:none}
+  .product-card__actions{flex-direction:column;gap:6px}
+  .price{font-size:16px}
+  .why-grid{grid-template-columns:1fr}
+  .newsletter{padding:40px 24px}
+  .newsletter__form{flex-direction:column}
+  .footer__grid{grid-template-columns:1fr}
+  .footer__bottom{flex-direction:column;text-align:center}
+  .cart-drawer{width:100vw}
+  .wa-float{width:52px;height:52px;bottom:78px;right:16px}
+  .toast{bottom:88px;font-size:13px;padding:12px 18px}
+  .brand-story__stats{gap:24px}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none !important;transition:none !important}
+}
+</style>
+</head>
+<body>
+
+<!-- =====================================================
+     ANNOUNCEMENT BAR
+     ===================================================== -->
+<div class="announce">
+  🌿 Free shipping on orders above <strong>₹999</strong> &nbsp;|&nbsp; Cash on Delivery available across India
+</div>
+
+<!-- =====================================================
+     HEADER
+     ===================================================== -->
+<header class="header" id="header">
+  <div class="header__inner">
+    <button class="icon-btn menu-toggle" id="menuToggle" aria-label="Open menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+
+    <a href="#" class="logo" aria-label="MinaHerb home">
+      <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M16 28c0-8 4-14 12-16-2 10-6 16-12 16Z"/>
+        <path d="M16 28C16 20 12 14 4 12c2 10 6 16 12 16Z"/>
+        <line x1="16" y1="28" x2="16" y2="16"/>
+      </svg>
+      MinaHerb
+    </a>
+
+    <nav class="nav" aria-label="Primary">
+      <a href="#shop">Shop</a>
+      <a href="#categories">Categories</a>
+      <a href="#bestsellers">Best Sellers</a>
+      <a href="#offers">Offers</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="header__actions">
+      <button class="icon-btn" id="searchToggle" aria-label="Search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      </button>
+      <a href="#account" class="icon-btn" aria-label="Account">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>
+      </a>
+      <button class="icon-btn" id="cartToggle" aria-label="Open cart">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        <span class="cart-badge" id="cartBadge">0</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- =====================================================
+     MOBILE MENU
+     ===================================================== -->
+<div class="overlay" id="overlay"></div>
+<aside class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+  <div class="mobile-nav__head">
+    <span class="logo" style="font-size:20px">MinaHerb</span>
+    <button class="icon-btn" id="mobileNavClose" aria-label="Close menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+  </div>
+  <a href="#shop">Shop</a>
+  <a href="#categories">Categories</a>
+  <a href="#bestsellers">Best Sellers</a>
+  <a href="#offers">Offers</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+</aside>
+
+<!-- =====================================================
+     HERO
+     ===================================================== -->
+<section class="hero">
+  <div class="hero__inner">
+    <div>
+      <span class="hero__eyebrow">🌿 100% Natural · Made in India</span>
+      <h1>Nature's Care for <em>Everyday Wellness</em></h1>
+      <p>Premium herbal skincare, hair care and wellness products crafted with care — trusted by families across India. Cash on delivery available.</p>
+      <div class="hero__cta">
+        <a href="#shop" class="btn btn--primary">
+          Shop Now
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+        <a href="#categories" class="btn btn--outline">Explore Products</a>
+      </div>
+    </div>
+    <div class="hero__visual">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 22c0-8 4-14 10-16-1 10-5 16-10 16Z"/>
+        <path d="M12 22C12 14 8 8 2 6c1 10 5 16 10 16Z"/>
+        <line x1="12" y1="22" x2="12" y2="12"/>
+      </svg>
+      <div class="hero__badge">
+        <span class="hero__badge-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        </span>
+        <span>Trusted by<br><strong>10,000+</strong> customers</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================
+     TRUST STRIP
+     ===================================================== -->
+<div class="trust-strip">
+  <div class="trust-item">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+    <span>Free shipping above ₹999</span>
+  </div>
+  <div class="trust-item">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
+    <span>Cash on Delivery</span>
+  </div>
+  <div class="trust-item">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><polyline points="3 3 3 8 8 8"/></svg>
+    <span>7-day return policy</span>
+  </div>
+  <div class="trust-item">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+    <span>WhatsApp support</span>
+  </div>
+</div>
+
+<!-- =====================================================
+     CATEGORIES
+     ===================================================== -->
+<section class="section" id="categories">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-head__eyebrow">Shop by Category</span>
+      <h2>Find Your Herbal Essentials</h2>
+      <p>Explore our curated collections of natural skincare, hair care and wellness products.</p>
+    </div>
+    <div class="categories-grid">
+      <a href="#shop" class="cat-card">
+        <div class="cat-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C8 6 6 10 6 14a6 6 0 0 0 12 0c0-4-2-8-6-12Z"/></svg></div>
+        <h3>Skin Care</h3>
+        <span>Aloe, rose, neem</span>
+      </a>
+      <a href="#shop" class="cat-card">
+        <div class="cat-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="5"/><path d="M6 21c0-3 3-5 6-5s6 2 6 5"/></svg></div>
+        <h3>Hair Care</h3>
+        <span>Oils, shampoo</span>
+      </a>
+      <a href="#shop" class="cat-card">
+        <div class="cat-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M8 2v4M16 2v4"/></svg></div>
+        <h3>Soaps</h3>
+        <span>Handmade bars</span>
+      </a>
+      <a href="#shop" class="cat-card">
+        <div class="cat-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6l2 8H7Z"/><path d="M7 11v8a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-8"/></svg></div>
+        <h3>Face Packs</h3>
+        <span>Masks &amp; scrubs</span>
+      </a>
+      <a href="#shop" class="cat-card">
+        <div class="cat-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M5 9l7-7 7 7"/></svg></div>
+        <h3>Wellness</h3>
+        <span>Herbal teas</span>
+      </a>
+      <a href="#shop" class="cat-card">
+        <div class="cat-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 12h8M12 8v8"/></svg></div>
+        <h3>Gift Sets</h3>
+        <span>Bundles</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================
+     BEST SELLERS
+     ===================================================== -->
+<section class="section section--cream" id="bestsellers">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-head__eyebrow">Best Sellers</span>
+      <h2>Loved by Our Customers</h2>
+      <p>Our most popular herbal products, trusted for everyday care.</p>
+    </div>
+    <div class="products-grid">
+
+      <!-- PRODUCT CARD 1 -->
+      <article class="product-card">
+        <div class="product-card__media" style="background:linear-gradient(135deg,#e6f2ea,#d0e6d6)">
+          <span class="badge">Best Seller</span>
+          <span class="badge badge--discount" style="left:auto;right:52px">50% OFF</span>
+          <button class="wishlist-btn" data-wishlist="aloe-vera-gel" aria-label="Add to wishlist">
+            <svg viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.6Z"/></svg>
+          </button>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C8 6 6 10 6 14a6 6 0 0 0 12 0c0-4-2-8-6-12Z"/></svg>
+        </div>
+        <div class="product-card__body">
+          <h3 class="product-card__name">Pure Aloe Vera Gel</h3>
+          <p class="product-card__desc">Soothing multipurpose gel for skin &amp; hair.</p>
+          <div class="product-card__price-row">
+            <span class="price">₹99</span>
+            <span class="price-orig">₹199</span>
+          </div>
+          <span class="stock">In stock</span>
+          <div class="product-card__actions">
+            <button class="btn btn--outline btn--sm add-to-cart"
+              data-id="aloe-vera-gel" data-name="Pure Aloe Vera Gel" data-price="99">Add to Cart</button>
+            <button class="btn btn--primary btn--sm buy-now"
+              data-id="aloe-vera-gel" data-name="Pure Aloe Vera Gel" data-price="99">Buy Now</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- PRODUCT CARD 2 -->
+      <article class="product-card">
+        <div class="product-card__media" style="background:linear-gradient(135deg,#f5f0e0,#ece1c1)">
+          <span class="badge">Best Seller</span>
+          <span class="badge badge--discount" style="left:auto;right:52px">25% OFF</span>
+          <button class="wishlist-btn" data-wishlist="neem-soap" aria-label="Add to wishlist">
+            <svg viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.6Z"/></svg>
+          </button>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="4" width="14" height="16" rx="4"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
+        </div>
+        <div class="product-card__body">
+          <h3 class="product-card__name">Neem Herbal Soap</h3>
+          <p class="product-card__desc">Handmade soap with neem &amp; turmeric.</p>
+          <div class="product-card__price-row">
+            <span class="price">₹149</span>
+            <span class="price-orig">₹199</span>
+          </div>
+          <span class="stock">In stock</span>
+          <div class="product-card__actions">
+            <button class="btn btn--outline btn--sm add-to-cart"
+              data-id="neem-soap" data-name="Neem Herbal Soap" data-price="149">Add to Cart</button>
+            <button class="btn btn--primary btn--sm buy-now"
+              data-id="neem-soap" data-name="Neem Herbal Soap" data-price="149">Buy Now</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- PRODUCT CARD 3 -->
+      <article class="product-card">
+        <div class="product-card__media" style="background:linear-gradient(135deg,#f2e8d5,#e6d5b0)">
+          <span class="badge">Best Seller</span>
+          <span class="badge badge--discount" style="left:auto;right:52px">40% OFF</span>
+          <button class="wishlist-btn" data-wishlist="herbal-hair-oil" aria-label="Add to wishlist">
+            <svg viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.6Z"/></svg>
+          </button>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2h4l-1 5h-2Z"/><rect x="7" y="7" width="10" height="15" rx="2"/></svg>
+        </div>
+        <div class="product-card__body">
+          <h3 class="product-card__name">Herbal Hair Oil</h3>
+          <p class="product-card__desc">Amla, bhringraj &amp; coconut oil blend.</p>
+          <div class="product-card__price-row">
+            <span class="price">₹299</span>
+            <span class="price-orig">₹499</span>
+          </div>
+          <span class="stock">In stock</span>
+          <div class="product-card__actions">
+            <button class="btn btn--outline btn--sm add-to-cart"
+              data-id="herbal-hair-oil" data-name="Herbal Hair Oil" data-price="299">Add to Cart</button>
+            <button class="btn btn--primary btn--sm buy-now"
+              data-id="herbal-hair-oil" data-name="Herbal Hair Oil" data-price="299">Buy Now</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- PRODUCT CARD 4 -->
+      <article class="product-card">
+        <div class="product-card__media" style="background:linear-gradient(135deg,#f5dfe0,#ecc7ca)">
+          <span class="badge badge--discount">30% OFF</span>
+          <button class="wishlist-btn" data-wishlist="rose-face-wash" aria-label="Add to wishlist">
+            <svg viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.6Z"/></svg>
+          </button>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/></svg>
+        </div>
+        <div class="product-card__body">
+          <h3 class="product-card__name">Rose Face Wash</h3>
+          <p class="product-card__desc">Gentle daily cleanser with rose extract.</p>
+          <div class="product-card__price-row">
+            <span class="price">₹249</span>
+            <span class="price-orig">₹349</span>
+          </div>
+          <span class="stock">In stock</span>
+          <div class="product-card__actions">
+            <button class="btn btn--outline btn--sm add-to-cart"
+              data-id="rose-face-wash" data-name="Rose Face Wash" data-price="249">Add to Cart</button>
+            <button class="btn btn--primary btn--sm buy-now"
+              data-id="rose-face-wash" data-name="Rose Face Wash" data-price="249">Buy Now</button>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================
+     NEW ARRIVALS
+     ===================================================== -->
+<section class="section" id="shop">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-head__eyebrow">New Arrivals</span>
+      <h2>Fresh from the Herbal Garden</h2>
+      <p>Newly added natural products, ready to enhance your routine.</p>
+    </div>
+    <div class="products-grid">
+
+      <article class="product-card">
+        <div class="product-card__media" style="background:linear-gradient(135deg,#e0eee2,#c9dfcd)">
+          <span class="badge badge--gold">New</span>
+          <button class="wishlist-btn" data-wishlist="tulsi-face-pack" aria-label="Add to wishlist">
+            <svg viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.6Z"/></svg>
+          </button>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C8 6 6 10 6 14a6 6 0 0 0 12 0c0-4-2-8-6-12Z"/></svg>
+        </div>
+        <div class="product-card__body">
+          <h3 class="product-card__name">Tulsi Face Pack</h3>
+          <p class="product-card__desc">Clay face pack with tulsi &amp; multani mitti.</p>
+          <div class="product-card__price-row">
+            <span class="price">₹199</span>
+            <span class="price-orig">₹299</span>
+          </div>
+          <span class="stock">In stock</span>
+          <div class="product-card__actions">
+            <button class="btn btn--outline btn--sm add-to-cart"
+              data-id="tulsi-face-pack" data-name="Tulsi Face Pack" data-price="199">Add to Cart</button>
+            <button class="btn btn--primary btn--sm buy-now"
+              data-id="tulsi-face-pack" data-name="Tulsi Face Pack" data-price="199">Buy Now</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <div class="product-card__media" style="background:linear-gradient(135deg,#efe6d6,#ddcba8)">
+          <span class="badge badge--gold">New</span>
+          <button class="wishlist-btn" data-wishlist="amla-shampoo" aria-label="Add to wishlist">
+            <svg viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.6Z"/></svg>
+          </button>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="8" width="12" height="14" rx="2"/><path d="M9 8V5h6v3"/></svg>
+        </div>
+        <div class="product-card__body">
+          <h3 class="product-card__name">Amla Herbal Shampoo</h3>
+          <p class="product-card__desc">Sulphate-free shampoo with amla extract.</p>
+          <div class="product-card__price-row">
+            <span class="price">₹329</span>
+            <span class="price-orig">₹449</span>
+          </div>
+          <span class="stock">In stock</span>
+          <div class="product-card__actions">
+            <button class="btn btn--outline btn--sm add-to-cart"
+              data-id="amla-shampoo" data-name="Amla Herbal Shampoo" data-price="329">Add to Cart</button>
+            <button class="btn btn--primary btn--sm buy-now"
+              data-id="amla-shampoo" data-name="Amla Herbal Shampoo" data-price="329">Buy Now</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <div class="product-card__media" style="background:linear-gradient(135deg,#e9efe4,#cddfc6)">
+          <span class="badge badge--gold">New</span>
+          <button class="wishlist-btn" data-wishlist="multani-mitti" aria-label="Add to wishlist">
+            <svg viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.6Z"/></svg>
+          </button>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="18" rx="8" ry="3"/><path d="M4 18V8M20 18V8M4 8c0-2 3.5-3 8-3s8 1 8 3"/></svg>
+        </div>
+        <div class="product-card__body">
+          <h3 class="product-card__name">Multani Mitti Powder</h3>
+          <p class="product-card__desc">Pure clay powder for skin &amp; hair masks.</p>
+          <div class="product-card__price-row">
+            <span class="price">₹149</span>
+            <span class="price-orig">₹199</span>
+          </div>
+          <span class="stock">In stock</span>
+          <div class="product-card__actions">
+            <button class="btn btn--outline btn--sm add-to-cart"
+              data-id="multani-mitti" data-name="Multani Mitti Powder" data-price="149">Add to Cart</button>
+            <button class="btn btn--primary btn--sm buy-now"
+              data-id="multani-mitti" data-name="Multani Mitti Powder" data-price="149">Buy Now</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <div class="product-card__media" style="background:linear-gradient(135deg,#f3e9e0,#e6d0bb)">
+          <span class="badge badge--gold">New</span>
+          <button class="wishlist-btn" data-wishlist="herbal-lip-balm" aria-label="Add to wishlist">
+            <svg viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.6Z"/></svg>
+          </button>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="2" width="6" height="14" rx="3"/><rect x="8" y="16" width="8" height="6" rx="1"/></svg>
+        </div>
+        <div class="product-card__body">
+          <h3 class="product-card__name">Herbal Lip Balm</h3>
+          <p class="product-card__desc">Nourishing balm with beeswax &amp; shea.</p>
+          <div class="product-card__price-row">
+            <span class="price">₹129</span>
+            <span class="price-orig">₹179</span>
+          </div>
+          <span class="stock">In stock</span>
+          <div class="product-card__actions">
+            <button class="btn btn--outline btn--sm add-to-cart"
+              data-id="herbal-lip-balm" data-name="Herbal Lip Balm" data-price="129">Add to Cart</button>
+            <button class="btn btn--primary btn--sm buy-now"
+              data-id="herbal-lip-balm" data-name="Herbal Lip Balm" data-price="129">Buy Now</button>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================
+     OFFER BANNER
+     ===================================================== -->
+<section class="section" id="offers">
+  <div class="container">
+    <div class="offer-banner">
+      <div>
+        <h2>Save <em>10%</em> on Your First Order</h2>
+        <p>Use coupon code <strong>MINAHERB10</strong> at checkout. Valid on all herbal products. Free shipping above ₹999.</p>
+        <a href="#shop" class="btn btn--gold">Shop the Sale</a>
+      </div>
+      <div style="text-align:center;font-size:80px;line-height:1">🌿</div>
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================
+     WHY CHOOSE
+     ===================================================== -->
+<section class="section section--cream">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-head__eyebrow">Why Choose MinaHerb</span>
+      <h2>Pure, Honest &amp; Trusted</h2>
+      <p>We believe in real ingredients, honest labels and genuine care.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="why-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C8 6 6 10 6 14a6 6 0 0 0 12 0c0-4-2-8-6-12Z"/></svg></div>
+        <h3>100% Natural</h3>
+        <p>Carefully selected herbs and plant-based ingredients.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 9h10M7 13h10M7 17h6"/></svg></div>
+        <h3>Honest Labeling</h3>
+        <p>No hidden ingredients. What you see is what you get.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></div>
+        <h3>Fast Delivery</h3>
+        <p>3–7 business days across India with tracking.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+        <h3>Real Support</h3>
+        <p>Talk to real people on WhatsApp &amp; email.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================
+     TESTIMONIALS
+     NOTE: Replace these with real order-linked reviews before publishing.
+     ===================================================== -->
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-head__eyebrow">Customer Stories</span>
+      <h2>What Our Customers Say</h2>
+      <p>Real feedback from real MinaHerb customers.</p>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial">
+        <div class="testimonial__stars">★★★★★</div>
+        <p class="testimonial__text">"The aloe vera gel is so refreshing. I use it daily and my skin feels calmer. Delivery was quick and packaging was neat."</p>
+        <div class="testimonial__author">
+          <div class="testimonial__avatar">P</div>
+          <div>
+            <div class="testimonial__name">Priya R.</div>
+            <div class="testimonial__role">Verified Customer</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial">
+        <div class="testimonial__stars">★★★★★</div>
+        <p class="testimonial__text">"Ordered the neem soap and hair oil. Both feel genuinely handmade. Love that the ingredient list is clearly written."</p>
+        <div class="testimonial__author">
+          <div class="testimonial__avatar">A</div>
+          <div>
+            <div class="testimonial__name">Anjali K.</div>
+            <div class="testimonial__role">Verified Customer</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial">
+        <div class="testimonial__stars">★★★★★</div>
+        <p class="testimonial__text">"COD made it easy to try first. The rose face wash is gentle and pleasant. Would order again."</p>
+        <div class="testimonial__author">
+          <div class="testimonial__avatar">R</div>
+          <div>
+            <div class="testimonial__name">Rahul S.</div>
+            <div class="testimonial__role">Verified Customer</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================
+     BRAND STORY
+     ===================================================== -->
+<section class="section section--cream" id="about">
+  <div class="container">
+    <div class="brand-story">
+      <div class="brand-story__visual">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 22c0-8 4-14 10-16-1 10-5 16-10 16Z"/>
+          <path d="M12 22C12 14 8 8 2 6c1 10 5 16 10 16Z"/>
+          <line x1="12" y1="22" x2="12" y2="12"/>
+        </svg>
+      </div>
+      <div>
+        <span class="section-head__eyebrow">Our Story</span>
+        <h2>Rooted in Nature, Made with Care</h2>
+        <p>MinaHerb began with a simple idea — that everyday skincare and wellness should come from nature, not a chemistry lab. We work with trusted herb growers and small-scale makers to bring you products that are honest, effective and gentle.</p>
+        <p>Every product is made in small batches, with ingredients you can actually pronounce. Our promise is simple: no shortcuts, no misleading claims, and a genuine commitment to your wellbeing.</p>
+        <div class="brand-story__stats">
+          <div>
+            <div class="stat__num">10K+</div>
+            <div class="stat__label">Happy customers</div>
+          </div>
+          <div>
+            <div class="stat__num">100%</div>
+            <div class="stat__label">Natural ingredients</div>
+          </div>
+          <div>
+            <div class="stat__num">PAN</div>
+            <div class="stat__label">India delivery</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================
+     FAQ
+     ===================================================== -->
+<section class="section" id="faq">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-head__eyebrow">FAQ</span>
+      <h2>Frequently Asked Questions</h2>
+      <p>Everything you need to know before ordering.</p>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item" open>
+        <summary>Do you offer Cash on Delivery?</summary>
+        <p>Yes, Cash on Delivery is available across most PIN codes in India. You can select COD at checkout. Online payment is also supported via Razorpay (UPI, cards, netbanking).</p>
+      </details>
+      <details class="faq-item">
+        <summary>How long does delivery take?</summary>
+        <p>Metro cities: 3–5 business days. Other cities: 5–7 business days. Remote PIN codes may take up to 10 business days. You will receive a tracking link once dispatched.</p>
+      </details>
+      <details class="faq-item">
+        <summary>What is your return policy?</summary>
+        <p>You can request a return within 7 days of delivery for damaged, defective, or incorrect items. Products must be unused and in original packaging. Opened herbal items cannot be returned for hygiene reasons.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Are your products safe for sensitive skin?</summary>
+        <p>Our products are made with gentle, plant-based ingredients. However, we recommend doing a small patch test first, especially if you have sensitive skin or allergies. Consult a dermatologist if unsure.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Do you ship outside India?</summary>
+        <p>Currently we ship only within India. For special requests, please contact us on WhatsApp.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================
+     NEWSLETTER
+     ===================================================== -->
+<section class="section">
+  <div class="container">
+    <div class="newsletter">
+      <h2>Join the MinaHerb Family</h2>
+      <p>Get herbal skincare tips, exclusive offers and new product updates. No spam, ever.</p>
+      <form class="newsletter__form" id="newsletterForm">
+        <input type="email" placeholder="Your email address" required aria-label="Email address" />
+        <button type="submit" class="btn btn--gold">Subscribe</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================
+     FOOTER
+     ===================================================== -->
+<footer class="footer" id="contact">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <div class="logo">
+          <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 28c0-8 4-14 12-16-2 10-6 16-12 16Z"/>
+            <path d="M16 28C16 20 12 14 4 12c2 10 6 16 12 16Z"/>
+            <line x1="16" y1="28" x2="16" y2="16"/>
+          </svg>
+          MinaHerb
+        </div>
+        <p>Premium herbal skincare and wellness products, crafted honestly in India.</p>
+        <div class="footer__contact">
+          <div>📍 Kushinagar, Uttar Pradesh, India</div>
+          <div>📞 <a href="tel:+91XXXXXXXXXX">+91 XXXXXXXXXX</a></div>
+          <div>✉️ <a href="mailto:support@minaherb.com">support@minaherb.com</a></div>
+        </div>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="#shop">All Products</a></li>
+          <li><a href="#bestsellers">Best Sellers</a></li>
+          <li><a href="#shop">New Arrivals</a></li>
+          <li><a href="#offers">Offers</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Policies</h4>
+        <ul>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="terms-and-conditions.html">Terms &amp; Conditions</a></li>
+          <li><a href="refund-policy.html">Refund &amp; Return</a></li>
+          <li><a href="shipping-policy.html">Shipping Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© <span id="year"></span> MinaHerb. All rights reserved.</span>
+      <span>Made with 🌿 in India</span>
+    </div>
+  </div>
+</footer>
+
+<!-- =====================================================
+     CART DRAWER
+     ===================================================== -->
+<aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart">
+  <div class="cart-drawer__head">
+    <h3>Your Cart</h3>
+    <button class="icon-btn" id="cartClose" aria-label="Close cart">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+  </div>
+  <div class="cart-drawer__body" id="cartBody"></div>
+  <div class="cart-drawer__foot" id="cartFoot" hidden>
+    <div class="coupon-row">
+      <input type="text" id="couponInput" placeholder="Coupon code (try MINAHERB10)" />
+      <button class="btn btn--ghost btn--sm" id="applyCoupon">Apply</button>
+    </div>
+    <div class="summary-row"><span>Subtotal</span><span id="subtotal">₹0</span></div>
+    <div class="summary-row summary-row--discount" id="discountRow" hidden><span>Discount</span><span id="discount">−₹0</span></div>
+    <div class="summary-row"><span>Shipping</span><span id="shipping">₹0</span></div>
+    <div class="summary-row summary-row--total"><span>Total</span><span id="total">₹0</span></div>
+    <button class="btn btn--primary btn--full" id="checkoutBtn" style="margin-top:16px">Proceed to Checkout</button>
+    <button class="btn btn--ghost btn--full btn--sm" id="continueShopping" style="margin-top:8px">Continue Shopping</button>
+  </div>
+</aside>
+
+<!-- =====================================================
+     WHATSAPP FLOAT
+     ===================================================== -->
+<a href="https://wa.me/91XXXXXXXXXX?text=Hi%20MinaHerb%2C%20I%20need%20help%20with%20my%20order."
+   class="wa-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor">
+    <path d="M12.04 2.01a9.9 9.9 0 0 0-8.41 15.2L2 22l4.9-1.58a9.9 9.9 0 1 0 5.14-18.4Zm5.72 14.06c-.24.68-1.4 1.32-1.94 1.36-.5.04-1.06.14-3.4-.9-2.85-1.2-4.66-4.14-4.8-4.34-.14-.2-1.14-1.5-1.14-2.86 0-1.36.72-2.02 1-2.3.26-.26.56-.32.76-.32h.54c.18 0 .42-.02.64.5.24.56.82 2 .9 2.14.08.14.12.3.02.48-.1.18-.14.28-.28.44-.14.16-.3.36-.42.48-.14.14-.28.3-.12.58.16.28.72 1.2 1.54 1.94 1.06.94 1.94 1.24 2.22 1.38.28.14.44.12.6-.06.16-.18.7-.82.88-1.1.18-.28.36-.22.6-.14.24.1 1.52.72 1.78.86.26.14.44.2.5.32.06.12.06.7-.18 1.38Z"/>
+  </svg>
+</a>
+
+<!-- =====================================================
+     TOAST
+     ===================================================== -->
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+/* =========================================================
+   MINAHERB – Frontend logic
+   Cart persists in localStorage.
+   NOTE: Checkout requires a backend. See handleCheckout().
+   ========================================================= */
+
+const CART_KEY = 'minaherb_cart_v1';
+const COUPON_KEY = 'minaherb_coupon_v1';
+const FREE_SHIP_THRESHOLD = 999;
+const SHIPPING_FLAT = 60;
+
+// Valid coupons (server-side validation required in production)
+const COUPONS = {
+  'MINAHERB10': { type: 'percent', value: 10 }
+};
+
+let cart = [];
+let appliedCoupon = null;
+
+// ---------- Utilities ----------
+const $ = (sel) => document.querySelector(sel);
+const $$ = (sel) => document.querySelectorAll(sel);
+const formatINR = (n) => '₹' + Number(n).toLocaleString('en-IN');
+
+function showToast(msg, ms = 2400){
+  const t = $('#toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  clearTimeout(t._timer);
+  t._timer = setTimeout(() => t.classList.remove('show'), ms);
+}
+
+// ---------- Cart persistence ----------
+function loadCart(){
+  try { cart = JSON.parse(localStorage.getItem(CART_KEY)) || []; }
+  catch { cart = []; }
+  try { appliedCoupon = JSON.parse(localStorage.getItem(COUPON_KEY)) || null; }
+  catch { appliedCoupon = null; }
+}
+function saveCart(){
+  localStorage.setItem(CART_KEY, JSON.stringify(cart));
+  if (appliedCoupon) localStorage.setItem(COUPON_KEY, JSON.stringify(appliedCoupon));
+  else localStorage.removeItem(COUPON_KEY);
+}
+
+// ---------- Cart totals ----------
+function computeTotals(){
+  const subtotal = cart.reduce((s, i) => s + i.price * i.qty, 0);
+  let discount = 0;
+  if (appliedCoupon && COUPONS[appliedCoupon]){
+    const c = COUPONS[appliedCoupon];
+    if (c.type === 'percent') discount = Math.round(subtotal * c.value / 100);
+  }
+  const afterDiscount = Math.max(subtotal - discount, 0);
+  const shipping = subtotal === 0 ? 0
+                  : afterDiscount >= FREE_SHIP_THRESHOLD ? 0
+                  : SHIPPING_FLAT;
+  return { subtotal, discount, shipping, total: afterDiscount + shipping };
+}
+
+// ---------- Render ----------
+function renderCart(){
+  const body = $('#cartBody');
+  const foot = $('#cartFoot');
+  const badge = $('#cartBadge');
+  const count = cart.reduce((s, i) => s + i.qty, 0);
+  badge.textContent = count;
+  badge.style.display = count > 0 ? 'flex' : 'none';
+
+  if (cart.length === 0){
+    foot.hidden = true;
+    body.innerHTML = `
+      <div class="empty-cart">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/>
+        </svg>
+        <p style="font-weight:600;color:var(--text);margin-bottom:4px">Your cart is empty</p>
+        <p style="font-size:13px">Add some herbal goodness to get started.</p>
+      </div>`;
+    return;
+  }
+
+  foot.hidden = false;
+  body.innerHTML = cart.map(item => `
+    <div class="cart-item">
+      <div class="cart-item__img">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C8 6 6 10 6 14a6 6 0 0 0 12 0c0-4-2-8-6-12Z"/></svg>
+      </div>
+      <div class="cart-item__info">
+        <div class="cart-item__name">${item.name}</div>
+        <div class="cart-item__price">${formatINR(item.price)}</div>
+        <div class="qty-controls">
+          <button class="qty-btn" data-dec="${item.id}" aria-label="Decrease quantity">−</button>
+          <span class="qty-value">${item.qty}</span>
+          <button class="qty-btn" data-inc="${item.id}" aria-label="Increase quantity">+</button>
+          <button class="remove-btn" data-remove="${item.id}">Remove</button>
+        </div>
+      </div>
+    </div>
+  `).join('');
+
+  const t = computeTotals();
+  $('#subtotal').textContent = formatINR(t.subtotal);
+  $('#shipping').textContent = t.shipping === 0 ? 'Free' : formatINR(t.shipping);
+  $('#total').textContent = formatINR(t.total);
+
+  const discRow = $('#discountRow');
+  if (t.discount > 0){
+    discRow.hidden = false;
+    $('#discount').textContent = '−' + formatINR(t.discount);
+  } else {
+    discRow.hidden = true;
+  }
+  $('#couponInput').value = appliedCoupon || '';
+}
+
+// ---------- Cart actions ----------
+function addToCart(id, name, price, qty = 1){
+  const existing = cart.find(i => i.id === id);
+  if (existing) existing.qty += qty;
+  else cart.push({ id, name, price: Number(price), qty });
+  saveCart();
+  renderCart();
+  showToast(`${name} added to cart`);
+  openCart();
+}
+function updateQty(id, delta){
+  const item = cart.find(i => i.id === id);
+  if (!item) return;
+  item.qty += delta;
+  if (item.qty <= 0) cart = cart.filter(i => i.id !== id);
+  saveCart();
+  renderCart();
+}
+function removeItem(id){
+  cart = cart.filter(i => i.id !== id);
+  saveCart();
+  renderCart();
+}
+
+// ---------- Cart drawer open/close ----------
+function openCart(){
+  $('#cartDrawer').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeCart(){
+  $('#cartDrawer').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+// ---------- Coupon ----------
+function applyCoupon(){
+  const code = $('#couponInput').value.trim().toUpperCase();
+  if (!code){ showToast('Enter a coupon code'); return; }
+  if (!COUPONS[code]){ showToast('Invalid coupon code'); return; }
+  if (cart.length === 0){ showToast('Add items first'); return; }
+  appliedCoupon = code;
+  saveCart();
+  renderCart();
+  showToast(`Coupon ${code} applied`);
+}
+
+// ---------- Checkout ----------
+/* ⚠️ IMPORTANT:
+   This is the boundary between frontend and backend.
+   In production, on checkout:
+   1. POST cart to /api/orders → server recomputes prices, applies
+      shipping, validates coupon, checks stock. Returns order_id + amount.
+   2. Razorpay: server creates order via Razorpay Orders API (secret key).
+      Frontend opens Razorpay Checkout with the order_id (public key only).
+   3. On payment success: server verifies signature using webhook secret.
+   4. COD: mark order as COD, no payment capture.
+   NEVER trust client-submitted prices.
+*/
+function handleCheckout(){
+  if (cart.length === 0){ showToast('Your cart is empty'); return; }
+  const totals = computeTotals();
+  // eslint-disable-next-line no-console
+  console.log('[MinaHerb] Cart payload for backend:', { cart, coupon: appliedCoupon, totals });
+
+  showToast('Backend not connected yet — connect order API to enable checkout.', 4000);
+  // TODO: fetch('/api/orders', { method: 'POST', body: JSON.stringify({ cart, coupon: appliedCoupon }) })
+  //   .then(res => res.json())
+  //   .then(order => { ...razorpay... })
+}
+
+// ---------- Search ----------
+function initSearch(){
+  const btn = $('#searchToggle');
+  if (!btn) return;
+  btn.addEventListener('click', () => {
+    showToast('Search: add a search page or backend endpoint to enable live results.');
+  });
+}
+
+// ---------- Wishlist ----------
+function initWishlist(){
+  const KEY = 'minaherb_wishlist_v1';
+  let saved = [];
+  try { saved = JSON.parse(localStorage.getItem(KEY)) || []; } catch {}
+  document.querySelectorAll('.wishlist-btn').forEach(btn => {
+    const id = btn.dataset.wishlist;
+    if (saved.includes(id)) btn.classList.add('active');
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      btn.classList.toggle('active');
+      const isActive = btn.classList.contains('active');
+      saved = isActive ? [...saved.filter(x => x !== id), id] : saved.filter(x => x !== id);
+      localStorage.setItem(KEY, JSON.stringify(saved));
+      showToast(isActive ? 'Added to wishlist' : 'Removed from wishlist');
+    });
+  });
+}
+
+// ---------- Event wiring ----------
+function init(){
+  loadCart();
+  renderCart();
+  initSearch();
+  initWishlist();
+
+  $('#year').textContent = new Date().getFullYear();
+
+  // Add to cart (delegated)
+  document.body.addEventListener('click', (e) => {
+    const addBtn = e.target.closest('.add-to-cart');
+    if (addBtn){
+      addToCart(addBtn.dataset.id, addBtn.dataset.name, addBtn.dataset.price);
+      return;
+    }
+    const buyBtn = e.target.closest('.buy-now');
+    if (buyBtn){
+      addToCart(buyBtn.dataset.id, buyBtn.dataset.name, buyBtn.dataset.price);
+      setTimeout(handleCheckout, 300);
+      return;
+    }
+    const inc = e.target.closest('[data-inc]');
+    if (inc){ updateQty(inc.dataset.inc, 1); return; }
+    const dec = e.target.closest('[data-dec]');
+    if (dec){ updateQty(dec.dataset.dec, -1); return; }
+    const rem = e.target.closest('[data-remove]');
+    if (rem){ removeItem(rem.dataset.remove); return; }
+  });
+
+  // Cart drawer
+  $('#cartToggle').addEventListener('click', openCart);
+  $('#cartClose').addEventListener('click', closeCart);
+  $('#continueShopping').addEventListener('click', closeCart);
+  $('#checkoutBtn').addEventListener('click', handleCheckout);
+  $('#applyCoupon').addEventListener('click', applyCoupon);
+  $('#couponInput').addEventListener('keydown', (e) => { if (e.key === 'Enter') applyCoupon(); });
+
+  // Mobile nav
+  const mobileNav = $('#mobileNav');
+  const overlay = $('#overlay');
+  const openMenu = () => { mobileNav.classList.add('open'); overlay.classList.add('open'); document.body.style.overflow = 'hidden'; };
+  const closeMenu = () => { mobileNav.classList.remove('open'); overlay.classList.remove('open'); document.body.style.overflow = ''; };
+  $('#menuToggle').addEventListener('click', openMenu);
+  $('#mobileNavClose').addEventListener('click', closeMenu);
+  overlay.addEventListener('click', closeMenu);
+  mobileNav.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
+
+  // Sticky header shadow
+  const header = $('#header');
+  const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 4);
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  // Newsletter (placeholder – connect to email provider)
+  $('#newsletterForm').addEventListener('submit', (e) => {
+    e.preventDefault();
+    const input = e.target.querySelector('input');
+    if (!input.value.includes('@')){ showToast('Please enter a valid email'); return; }
+    showToast('Thanks! Connect your email provider to activate signup.');
+    input.value = '';
+  });
+}
+
+document.addEventListener('DOMContentLoaded', init);
+</script>
+</body>
+</html>
